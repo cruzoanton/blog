@@ -4,8 +4,6 @@ class User < ApplicationRecord
   has_many :articles, dependent: :destroy
     has_many :comments, dependent: :destroy
 
-
-  validates :title, presence: true
-  validates :body, presence: true, length: { minimum: 10 }
+  validates :name, presence: true
 
   end

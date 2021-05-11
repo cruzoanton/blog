@@ -1,6 +1,6 @@
 class Article < ApplicationRecord
   include Visible
-  belongs_to :user
+  #belongs_to :user
 
     has_many :comments, dependent: :destroy
     has_many :commenters, through: :comments, source: :user
